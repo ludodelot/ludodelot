@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:071F3F,100:1F6FB2&height=200&section=header&text=Ludovic%20Delot&fontSize=54&fontColor=E8EEF7&animation=fadeIn&fontAlignY=36&desc=Business%20Intelligence%20%26%20Data%20Analyst%20%C2%B7%20Content%20Producer&descAlignY=55&descSize=19&descColor=8FA8C9" width="100%" alt="Ludovic Delot" />
+<img src="./banner.svg" width="100%" alt="Ludovic Delot" />
 
 <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1200&color=1F6FB2&center=true&vCenter=true&repeat=true&width=800&height=50&lines=Scaling+Power+BI+at+LVMH+(Luxury+%2F+Beauty);CPFR+forecasting+for+25%2C000%2B+SKU-Stores+at+Groupe+SEB;Festival+photographer+for+Live+Nation+%2F+OCESA;Content+Producer%2C+Tomorrowland+Lab+of+Tomorrow;MSc+International+Management+%26+Finance%2C+Rennes+SB" alt="Typing SVG" />
 
@@ -314,5 +314,5 @@ Figma
 <br>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1F6FB2,100:071F3F&height=100&section=footer" width="100%" alt="" />
+<img src="./banner_footer.svg" width="100%" alt="" />
 </div>
