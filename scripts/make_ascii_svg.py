@@ -69,8 +69,11 @@ def build_svg(rows: list[str]) -> str:
     parts.append(
         f'<svg xmlns="http://www.w3.org/2000/svg" '
         f'viewBox="0 0 {width:.1f} {height:.1f}" '
-        f'width="{width:.0f}" height="{height:.0f}" font-family="Menlo, Consolas, \'DejaVu Sans Mono\', monospace">'
+        f'role="img" aria-labelledby="title desc" '
+        f'font-family="Menlo, Consolas, \'DejaVu Sans Mono\', monospace">'
     )
+    parts.append('<title id="title">ASCII portrait of Ludovic Delot</title>')
+    parts.append('<desc id="desc">A monochrome portrait rendered from text characters.</desc>')
     parts.append(f'<rect width="100%" height="100%" fill="none"/>')
     parts.append("<defs>")
 

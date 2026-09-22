@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640.0 660.0" width="640" height="660" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640.0 660.0" role="img" aria-labelledby="title desc" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace">
+<title id="title">ASCII portrait of Ludovic Delot</title>
+<desc id="desc">A monochrome portrait rendered from text characters.</desc>
 <rect width="100%" height="100%" fill="none"/>
 <defs>
 <clipPath id="clip0">

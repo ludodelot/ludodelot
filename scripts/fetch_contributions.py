@@ -11,12 +11,14 @@ Output: ../data/contributions.json
 import json
 import sys
 from datetime import date, datetime
+from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
 
 USERNAME = sys.argv[1] if len(sys.argv) > 1 else "ludodelot"
 URL = f"https://github.com/users/{USERNAME}/contributions"
+ROOT = Path(__file__).resolve().parent.parent
 
 
 def fetch_days() -> list[dict]:
@@ -102,7 +104,7 @@ def main() -> None:
     days = fetch_days()
     stats = compute_stats(days)
     out = {"username": USERNAME, "days": days, "stats": stats}
-    with open("../data/contributions.json", "w") as f:
+    with (ROOT / "data" / "contributions.json").open("w", encoding="utf-8") as f:
         json.dump(out, f, indent=2)
     print(f"Fetched {len(days)} days. Total: {stats['total']}. Longest streak: {stats['longest_streak']}.")
 

@@ -1,49 +1,26 @@
-
-      <svg
-        width="854"
-        height="200"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        style="z-index:1;position:relative"
-        viewBox="0 0 854 200"
-      >
-        <style>
-      .text {   font-size: 54px;   font-weight: 700;   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;  } .desc {   font-size: 19px;   font-weight: 500;   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;  } 
-      .text, .desc {   animation: fadeIn 1.2s ease-in-out forwards;  } @keyframes fadeIn {   from {     opacity: 0;   }   to {     opacity: 1;   }  } 
-    </style>
-        <defs>
-              <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#071F3F"/><stop offset="100%" stop-color="#1F6FB2"/>
-              </linearGradient>
-            </defs>
-        
-      <g transform="translate(427, 100) scale(1, 1) translate(-427, -100)">
-        <path d="" fill="url(#linear)" opacity="0.4" >
-          <animate
-              attributeName="d"
-              dur="20s"
-              repeatCount="indefinite"
-              keyTimes="0;0.333;0.667;1"
-              calcmod="spline"
-              keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1"
-              begin="0s"
-              values="M0 0L 0 120Q 213.5 160 427 130T 854 155L 854 0 Z;M0 0L 0 145Q 213.5 160 427 140T 854 130L 854 0 Z;M0 0L 0 165Q 213.5 135 427 165T 854 130L 854 0 Z;M0 0L 0 120Q 213.5 160 427 130T 854 155L 854 0 Z">
-          </animate>
-        </path>
-        <path d="" fill="url(#linear)" opacity="0.4" >
-          <animate
-            attributeName="d"
-            dur="20s"
-            repeatCount="indefinite"
-            keyTimes="0;0.333;0.667;1"
-            calcmod="spline"
-            keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1"
-            begin="-10s"
-            values="M0 0L 0 135Q 213.5 180 427 150T 854 160L 854 0 Z;M0 0L 0 150Q 213.5 120 427 120T 854 140L 854 0 Z;M0 0L 0 145Q 213.5 125 427 150T 854 165L 854 0 Z;M0 0L 0 135Q 213.5 180 427 150T 854 160L 854 0 Z">
-          </animate>
-        </path>
-      </g>
-         <text text-anchor="middle" dominant-baseline="middle" x="50%" y="36%" class="text" style="fill:#E8EEF7;" stroke="#none" stroke-width="1" >Ludovic Delot</text>
-        <text text-anchor="middle" dominant-baseline="middle" x="50%" y="55%" class="desc" style="fill:#E8EEF7;">Business Intelligence and Data Analyst · Content Producer</text>
-      </svg>
-    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 240" role="img" aria-labelledby="title desc">
+  <title id="title">Ludovic Delot</title>
+  <desc id="desc">Business Intelligence and Data Analyst; Content Producer and Photographer.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07182f"/>
+      <stop offset="1" stop-color="#0d315c"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#62b0ef"/>
+      <stop offset="1" stop-color="#8bd5ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="240" rx="18" fill="url(#background)"/>
+  <path d="M0 192 C180 150 302 220 470 176 S755 126 960 174 V240 H0Z" fill="#0a2446"/>
+  <path d="M0 205 C210 163 330 226 510 191 S790 147 960 183" fill="none" stroke="#1d5f98" stroke-width="2" opacity=".8"/>
+  <rect x="54" y="45" width="44" height="5" rx="2.5" fill="url(#signal)"/>
+  <text x="54" y="112" fill="#f4f8fc" font-size="48" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Ludovic Delot</text>
+  <text x="56" y="151" fill="#9fd2f6" font-size="21" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">BUSINESS INTELLIGENCE · DATA ANALYTICS</text>
+  <text x="56" y="184" fill="#c8d8e8" font-size="17" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace">Power BI / Python / SQL / R  ×  content / photography</text>
+  <g fill="#69baf2" opacity=".75">
+    <rect x="846" y="45" width="12" height="12" rx="2"/>
+    <rect x="866" y="45" width="12" height="12" rx="2" opacity=".7"/>
+    <rect x="886" y="45" width="12" height="12" rx="2" opacity=".45"/>
+  </g>
+</svg>

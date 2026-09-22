@@ -1,15 +1,13 @@
 """
-Render data/contributions.json as the classic 53-week x 7-day
-contribution calendar: rounded, colored boxes on a GitHub-ish green
-ramp. Reveals once with a diagonal, line-after-line slide-down
-(CSS keyframes that play on load, then freeze -- no looping), plus a
-Less->More legend and a stats footer.
+Render data/contributions.json as a static 53-week x 7-day contribution
+calendar with rounded cells, a Less-to-More legend, and a stats footer.
 
 Usage: python render_heatmap_svg.py
 Output: ../contrib-heatmap.svg
 """
 import json
 from datetime import datetime
+from pathlib import Path
 
 CELL = 11
 GAP = 3
@@ -26,9 +24,11 @@ MONTHS = [
     "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
 ]
 
+ROOT = Path(__file__).resolve().parent.parent
+
 
 def load_data():
-    with open("../data/contributions.json") as f:
+    with (ROOT / "data" / "contributions.json").open(encoding="utf-8") as f:
         return json.load(f)
 
 
@@ -80,15 +80,14 @@ def build_svg(data: dict) -> str:
     parts = []
     parts.append(
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" '
-        f'width="{width}" height="{height}" font-family="Menlo, Consolas, \'DejaVu Sans Mono\', monospace">'
+        f'role="img" aria-labelledby="title desc" '
+        f'font-family="Menlo, Consolas, \'DejaVu Sans Mono\', monospace">'
     )
+    parts.append('<title id="title">GitHub contribution activity</title>')
     parts.append(
-        "<style>"
-        ".cell{animation:reveal 0.5s cubic-bezier(.2,.7,.3,1) both;}"
-        "@keyframes reveal{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:translateY(0);}}"
-        "</style>"
+        f'<desc id="desc">Contribution calendar for {data["username"]}: '
+        f'{stats.get("total", 0)} contributions in the last year.</desc>'
     )
-
     # Month labels.
     for wi, label in month_labels(weeks):
         x = LEFT_PAD + wi * STEP
@@ -108,11 +107,9 @@ def build_svg(data: dict) -> str:
             color = PALETTE[level]
             if best_date and day["date"] == best_date and level > 0:
                 color = PALETTE[5]
-            delay = 0.012 * (wi + di)
             title = f'{day["count"]} contribution{"s" if day["count"] != 1 else ""} on {day["date"]}'
             parts.append(
-                f'<rect class="cell" x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="2.5" '
-                f'fill="{color}" style="animation-delay:{delay:.3f}s">'
+                f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="2.5" fill="{color}">'
                 f'<title>{title}</title></rect>'
             )
 
@@ -140,9 +137,9 @@ def build_svg(data: dict) -> str:
 def main() -> None:
     data = load_data()
     svg = build_svg(data)
-    with open("../contrib-heatmap.svg", "w") as f:
+    with (ROOT / "contrib-heatmap.svg").open("w", encoding="utf-8") as f:
         f.write(svg)
-    print("Saved: ../contrib-heatmap.svg")
+    print(f"Saved: {ROOT / 'contrib-heatmap.svg'}")
 
 
 if __name__ == "__main__":

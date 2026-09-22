@@ -10,19 +10,22 @@ name: Update profile art
 permissions:
   contents: write
 
+concurrency:
+  group: update-profile-art
+  cancel-in-progress: true
+
 jobs:
   heatmap:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: pip install requests beautifulsoup4
-      - working-directory: scripts
-        run: python fetch_contributions.py ludodelot
-      - working-directory: scripts
-        run: python render_heatmap_svg.py
+      - run: pip install -r scripts/requirements-workflow.txt
+      - run: python scripts/fetch_contributions.py ludodelot
+      - run: python scripts/render_heatmap_svg.py
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: refresh contribution graph [skip ci]"
