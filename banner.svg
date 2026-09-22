@@ -11,16 +11,27 @@
       <stop offset="1" stop-color="#8bd5ff"/>
     </linearGradient>
   </defs>
+  <style>
+    .signal-line { animation: draw 1.4s cubic-bezier(.2,.7,.3,1) both; stroke-dasharray: 900; }
+    .signal-dot { animation: pulse 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .signal-dot:nth-of-type(2) { animation-delay: .24s; }
+    .signal-dot:nth-of-type(3) { animation-delay: .48s; }
+    @keyframes draw { from { stroke-dashoffset: 900; } to { stroke-dashoffset: 0; } }
+    @keyframes pulse { 0%, 70%, 100% { opacity: .4; transform: scale(.82); } 35% { opacity: 1; transform: scale(1); } }
+    @media (prefers-reduced-motion: reduce) {
+      .signal-line, .signal-dot { animation: none; }
+    }
+  </style>
   <rect width="960" height="240" rx="18" fill="url(#background)"/>
   <path d="M0 192 C180 150 302 220 470 176 S755 126 960 174 V240 H0Z" fill="#0a2446"/>
-  <path d="M0 205 C210 163 330 226 510 191 S790 147 960 183" fill="none" stroke="#1d5f98" stroke-width="2" opacity=".8"/>
+  <path class="signal-line" d="M0 205 C210 163 330 226 510 191 S790 147 960 183" fill="none" stroke="#1d5f98" stroke-width="2" opacity=".8"/>
   <rect x="54" y="45" width="44" height="5" rx="2.5" fill="url(#signal)"/>
   <text x="54" y="112" fill="#f4f8fc" font-size="48" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Ludovic Delot</text>
   <text x="56" y="151" fill="#9fd2f6" font-size="21" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">BUSINESS INTELLIGENCE · DATA ANALYTICS</text>
   <text x="56" y="184" fill="#c8d8e8" font-size="17" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace">Power BI / Python / SQL / R  ×  content / photography</text>
   <g fill="#69baf2" opacity=".75">
-    <rect x="846" y="45" width="12" height="12" rx="2"/>
-    <rect x="866" y="45" width="12" height="12" rx="2" opacity=".7"/>
-    <rect x="886" y="45" width="12" height="12" rx="2" opacity=".45"/>
+    <rect class="signal-dot" x="846" y="45" width="12" height="12" rx="2"/>
+    <rect class="signal-dot" x="866" y="45" width="12" height="12" rx="2" opacity=".7"/>
+    <rect class="signal-dot" x="886" y="45" width="12" height="12" rx="2" opacity=".45"/>
   </g>
 </svg>

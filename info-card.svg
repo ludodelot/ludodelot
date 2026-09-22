@@ -1,8 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 346" role="img" aria-labelledby="title desc" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace">
 <title id="title">Profile facts for Ludovic Delot</title>
 <desc id="desc">Role, experience, tools, education, location, and languages.</desc>
+<style>.cursor{animation:blink 1.1s steps(1,end) infinite}@keyframes blink{50%{opacity:.2}}@media(prefers-reduced-motion:reduce){.cursor{animation:none}}</style>
 <rect x="0.5" y="0.5" width="639" height="345" rx="10" fill="#0B1F3F" stroke="#1F3A66"/>
 <text x="26" y="34" font-size="13.5" fill="#F2F6FB" font-weight="600"><tspan fill="#39D353">&gt;</tspan> profile.json</text>
+<rect class="cursor" x="151" y="21" width="8" height="15" rx="1" fill="#39D353"/>
 <line x1="26" y1="54" x2="614" y2="54" stroke="#1F3A66"/>
 <text x="144" y="81" font-size="13.5"><tspan x="26" fill="#79BFF0" font-weight="600">whoami</tspan><tspan fill="#9AAECC"> : </tspan><tspan fill="#F2F6FB">Ludovic Delot</tspan></text>
 <text x="144" y="108" font-size="13.5"><tspan x="26" fill="#79BFF0" font-weight="600">role</tspan><tspan fill="#9AAECC"> : </tspan><tspan fill="#F2F6FB">BI &amp; Data Analyst · Content Producer</tspan></text>

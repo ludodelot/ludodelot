@@ -42,10 +42,14 @@ def build_svg() -> str:
         'font-family="Menlo, Consolas, \'DejaVu Sans Mono\', monospace">',
         '<title id="title">Profile facts for Ludovic Delot</title>',
         '<desc id="desc">Role, experience, tools, education, location, and languages.</desc>',
+        '<style>.cursor{animation:blink 1.1s steps(1,end) infinite}'
+        '@keyframes blink{50%{opacity:.2}}'
+        '@media(prefers-reduced-motion:reduce){.cursor{animation:none}}</style>',
         f'<rect x="0.5" y="0.5" width="{WIDTH - 1}" height="{height - 1}" rx="10" '
         f'fill="{NAVY}" stroke="{BORDER}"/>',
         f'<text x="{PAD_X}" y="34" font-size="13.5" fill="{VAL_COLOR}" font-weight="600">'
         f'<tspan fill="{ACCENT}">&gt;</tspan> profile.json</text>',
+        f'<rect class="cursor" x="151" y="21" width="8" height="15" rx="1" fill="{ACCENT}"/>',
         f'<line x1="{PAD_X}" y1="{TITLE_H}" x2="{WIDTH - PAD_X}" y2="{TITLE_H}" '
         f'stroke="{BORDER}"/>',
     ]

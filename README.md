@@ -1,19 +1,24 @@
+<!-- Hallmark · macrostructure: Stat-Led × Long Document · tone: technical / premium · theme: Terminal · pre-emit critique: P5 H5 E4 S5 R4 V5 -->
+
 <div align="center">
 
 <img src="./banner.svg" width="100%" alt="Ludovic Delot — Business Intelligence and Data Analyst; Content Producer and Photographer" />
 
-**Business Intelligence · Commercial analytics · Finance · Automation**<br>
-*A second practice in content production and live-event photography.*
+`BUSINESS INTELLIGENCE` · `FINANCE` · `AUTOMATION` · `VISUAL STORYTELLING`
 
 [LinkedIn](https://www.linkedin.com/in/delot/) · [Email](mailto:ludovicdelot99@gmail.com) · [Featured work](#featured-projects)
 
 </div>
+
+## Profile
 
 I build decision systems that connect business questions to reliable data products. At **LVMH**, I helped scale an Excel-based reporting workflow into a 20+ dashboard Power BI product on a 25-table model. Earlier work spans CPFR and supply-chain analytics at **Groupe SEB**, RPA investment analysis at **El Puerto de Liverpool**, and academic analytics at **EGADE Business School**.
 
 Alongside data, I produce visual stories: festival photography for **Live Nation / OCESA**, content production for **Tomorrowland’s Lab of Tomorrow**, and client work through **Delot Media**.
 
 Based in Mexico City · Mexican and French national · MSc International Management & Finance, Rennes School of Business
+
+<img src="./info-card.svg" width="100%" alt="Animated terminal-inspired profile card summarizing Ludovic Delot’s role, experience, technical stack, education, location, and languages" />
 
 ## Selected impact
 
@@ -28,35 +33,39 @@ Based in Mexico City · Mexican and French national · MSc International Managem
 ### [Portfolio construction through clustering](https://github.com/ludodelot/rsb-datascience-finance-clustering-portfolios)
 
 Builds equity portfolios from **105 US stocks** using K-Means and hierarchical clustering across market, ESG, and categorical feature sets. The project focuses on segmentation and portfolio construction—not return forecasting.
+
 `Python · clustering · finance · ESG analysis`
 
 ### [Semiconductor financial econometrics](https://github.com/ludodelot/rsb-financial-econometrics-semiconductors)
 
 Studies return transmission and herding across the semiconductor supply chain using PCA, robust OLS, the CSAD herding test, and EGARCH volatility models.
+
 `R · econometrics · PCA · EGARCH · market behavior`
 
 ### [Purchasing Power Parity: Mexico × France](https://github.com/ludodelot/rsb-exchange-markets-ppp-mexico-france)
 
 Tests absolute Purchasing Power Parity between Mexico and France over 2020–2024 with OLS, then interprets why the evidence rejects the hypothesis.
+
 `R · exchange markets · OLS · hypothesis testing`
 
 ### [Easy Velo financial toolbox](https://github.com/ludodelot/rsb-financial-toolbox-easyvelo)
 
 Develops an integrated financial model for a bicycle-subscription business plan, including P&L, balance sheet, WACC, funding structure, and break-even analysis.
+
 `Excel · financial modeling · valuation · scenario analysis`
 
 ## Toolbox
 
-**Business intelligence**
+**Business intelligence**<br>
 Power BI · DAX · Power Query · SQL · Tableau · Data Modeling · ETL · Data Visualization · KPI Governance
 
-**Programming and quantitative work**
+**Programming and quantitative work**<br>
 Python · R · Excel · Statistics · Econometrics · Machine Learning · Financial Analysis
 
-**Automation, AI, and development**
+**Automation, AI, and development**<br>
 UiPath · UiPath Insights · OpenAI API · Microsoft Copilot · Claude · Make · Notion · Google Cloud · AWS · Git · GitHub · PBIP
 
-**Creative production**
+**Creative production**<br>
 Premiere Pro · Photoshop · Lightroom · Illustrator · Figma · Photography · Videography · Real-Time Editing
 
 ## GitHub activity
@@ -64,6 +73,14 @@ Premiere Pro · Photoshop · Lightroom · Illustrator · Figma · Photography ·
 <img src="./contrib-heatmap.svg" width="100%" alt="Contribution calendar for the ludodelot GitHub account, including annual total and longest streak" />
 
 <sub>Generated daily in this repository from GitHub’s public contribution calendar.</sub>
+
+<div align="center">
+
+<img src="./ludo-ascii.svg" width="72%" alt="Animated monochrome ASCII portrait of Ludovic Delot" />
+
+<sub><code>portrait.render(mode="ascii", palette="steel-blue")</code></sub>
+
+</div>
 
 ## Business Intelligence and data experience
 
@@ -194,21 +211,6 @@ Winner, Banorte Ideation & Prototyping Challenge · Winner, Patagonia Conscious 
 
 **Languages**<br>
 Spanish (native) · English (professional, TOEFL ITP) · French (elementary)
-
-</details>
-
-## Terminal mode
-
-<details>
-<summary><strong>Open the visual identity panel</strong></summary>
-
-<br>
-
-<img src="./info-card.svg" width="100%" alt="Terminal-inspired profile card summarizing Ludovic Delot’s role, experience, technical stack, education, location, and languages" />
-
-<br>
-
-<img src="./ludo-ascii.svg" width="100%" alt="Monochrome ASCII portrait of Ludovic Delot" />
 
 </details>
 
