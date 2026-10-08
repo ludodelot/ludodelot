@@ -608,8 +608,8 @@
     },
     {
       "date": "2026-02-03",
-      "count": 1,
-      "level": 1
+      "count": 0,
+      "level": 0
     },
     {
       "date": "2026-02-04",
@@ -903,7 +903,7 @@
     },
     {
       "date": "2026-04-03",
-      "count": 5,
+      "count": 4,
       "level": 1
     },
     {
@@ -1028,8 +1028,8 @@
     },
     {
       "date": "2026-04-28",
-      "count": 1,
-      "level": 1
+      "count": 0,
+      "level": 0
     },
     {
       "date": "2026-04-29",
@@ -1568,7 +1568,7 @@
     },
     {
       "date": "2026-08-14",
-      "count": 2,
+      "count": 1,
       "level": 1
     },
     {
@@ -1598,7 +1598,7 @@
     },
     {
       "date": "2026-08-20",
-      "count": 9,
+      "count": 8,
       "level": 1
     },
     {
@@ -1838,19 +1838,24 @@
     },
     {
       "date": "2026-10-07",
-      "count": 2,
-      "level": 1
+      "count": 34,
+      "level": 2
+    },
+    {
+      "date": "2026-10-08",
+      "count": 30,
+      "level": 2
     }
   ],
   "stats": {
-    "total": 668,
-    "longest_streak": 31,
-    "current_streak": 31,
+    "total": 725,
+    "longest_streak": 32,
+    "current_streak": 32,
     "best_day": {
       "date": "2026-09-14",
       "count": 83
     },
-    "last_active": "2026-10-07",
-    "generated_at": "2026-10-07T13:33:24.261691Z"
+    "last_active": "2026-10-08",
+    "generated_at": "2026-10-08T13:39:10.346772Z"
   }
 }
