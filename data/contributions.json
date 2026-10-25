@@ -2,41 +2,6 @@
   "username": "ludodelot",
   "days": [
     {
-      "date": "2025-10-19",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-10-20",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-10-21",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-10-22",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-10-23",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-10-24",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-10-25",
-      "count": 0,
-      "level": 0
-    },
-    {
       "date": "2025-10-26",
       "count": 0,
       "level": 0
@@ -1759,11 +1724,11 @@
     {
       "date": "2026-10-05",
       "count": 63,
-      "level": 4
+      "level": 3
     },
     {
       "date": "2026-10-06",
-      "count": 82,
+      "count": 84,
       "level": 4
     },
     {
@@ -1853,19 +1818,24 @@
     },
     {
       "date": "2026-10-24",
-      "count": 2,
+      "count": 65,
+      "level": 4
+    },
+    {
+      "date": "2026-10-25",
+      "count": 8,
       "level": 1
     }
   ],
   "stats": {
-    "total": 850,
-    "longest_streak": 48,
-    "current_streak": 48,
+    "total": 923,
+    "longest_streak": 49,
+    "current_streak": 49,
     "best_day": {
-      "date": "2026-09-14",
-      "count": 83
+      "date": "2026-10-06",
+      "count": 84
     },
-    "last_active": "2026-10-24",
-    "generated_at": "2026-10-24T11:12:17.628108Z"
+    "last_active": "2026-10-25",
+    "generated_at": "2026-10-25T11:41:50.631272Z"
   }
 }
