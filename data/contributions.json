@@ -1823,19 +1823,24 @@
     },
     {
       "date": "2026-10-25",
+      "count": 9,
+      "level": 1
+    },
+    {
+      "date": "2026-10-26",
       "count": 8,
       "level": 1
     }
   ],
   "stats": {
-    "total": 923,
-    "longest_streak": 49,
-    "current_streak": 49,
+    "total": 932,
+    "longest_streak": 50,
+    "current_streak": 50,
     "best_day": {
       "date": "2026-10-06",
       "count": 84
     },
-    "last_active": "2026-10-25",
-    "generated_at": "2026-10-25T11:41:50.631272Z"
+    "last_active": "2026-10-26",
+    "generated_at": "2026-10-26T13:14:14.176522Z"
   }
 }
