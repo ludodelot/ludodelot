@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 212" role="img" aria-labelledby="title desc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<title id="title">How I build data products</title>
+<desc id="desc">Five stages: raw sources; Python ETL with data-quality checks; a semantic model in DAX and TMDL versioned as PBIP in Git; Power BI with governed KPIs; and an AI layer of agents, skills and MCP.</desc>
+<style>.stage{animation:rise .7s cubic-bezier(.2,.8,.3,1) both}.s1{animation-delay:.12s}.s2{animation-delay:.24s}.s3{animation-delay:.36s}.s4{animation-delay:.48s}
+.wire{stroke-dasharray:3 7;animation:flow 1s linear infinite}
+.packet{animation:travel 3.6s cubic-bezier(.45,0,.55,1) infinite}.p2{animation-delay:1.2s}.p3{animation-delay:2.4s}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes flow{to{stroke-dashoffset:-20}}
+@keyframes travel{0%{transform:translateX(0);opacity:0}8%{opacity:1}92%{opacity:1}100%{transform:translateX(768px);opacity:0}}
+@media (prefers-reduced-motion: reduce){.packet{opacity:0}}@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }</style>
+<path class="wire" d="M96 112 H864" stroke="#62b0ef" stroke-width="2" fill="none" opacity=".75"/>
+<g fill="#39d353"><circle class="packet" cx="96" cy="112" r="5"/><circle class="packet p2" cx="96" cy="112" r="5"/><circle class="packet p3" cx="96" cy="112" r="5"/></g>
+<g transform="translate(0 0)"><g class="stage s0">
+<rect x="1" y="20" width="182" height="188" rx="14" fill="#0b1f3f" stroke="#1f3a66" stroke-width="1"/>
+<text x="18" y="52" font-size="12.5" font-weight="700" fill="#39d353" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">01 · SOURCES</text>
+<text x="18" y="84" font-size="20" font-weight="800" fill="#f2f6fb">Raw data</text>
+<text x="18" y="160" font-size="14.5" fill="#9aaecc">GCP · SharePoint</text>
+<text x="18" y="182" font-size="14.5" fill="#9aaecc">retailer files · APIs</text>
+</g></g>
+<g transform="translate(193 0)"><g class="stage s1">
+<rect x="1" y="20" width="182" height="188" rx="14" fill="#0b1f3f" stroke="#1f3a66" stroke-width="1"/>
+<text x="18" y="52" font-size="12.5" font-weight="700" fill="#39d353" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">02 · TRANSFORM</text>
+<text x="18" y="84" font-size="20" font-weight="800" fill="#f2f6fb">Python ETL</text>
+<text x="18" y="160" font-size="14.5" fill="#9aaecc">pandas · SQL · dbt</text>
+<text x="18" y="182" font-size="14.5" fill="#9aaecc">data-quality checks</text>
+</g></g>
+<g transform="translate(386 0)"><g class="stage s2">
+<rect x="1" y="20" width="182" height="188" rx="14" fill="#0b1f3f" stroke="#62b0ef" stroke-width="1.6"/>
+<text x="18" y="52" font-size="12.5" font-weight="700" fill="#39d353" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">03 · MODEL</text>
+<text x="18" y="84" font-size="20" font-weight="800" fill="#f2f6fb">Semantic model</text>
+<text x="18" y="160" font-size="14.5" fill="#9aaecc">DAX · TMDL · star</text>
+<text x="18" y="182" font-size="14.5" fill="#9aaecc">PBIP in Git</text>
+</g></g>
+<g transform="translate(579 0)"><g class="stage s3">
+<rect x="1" y="20" width="182" height="188" rx="14" fill="#0b1f3f" stroke="#1f3a66" stroke-width="1"/>
+<text x="18" y="52" font-size="12.5" font-weight="700" fill="#39d353" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">04 · DECIDE</text>
+<text x="18" y="84" font-size="20" font-weight="800" fill="#f2f6fb">Power BI</text>
+<text x="18" y="160" font-size="14.5" fill="#9aaecc">governed KPIs</text>
+<text x="18" y="182" font-size="14.5" fill="#9aaecc">self-service reports</text>
+</g></g>
+<g transform="translate(772 0)"><g class="stage s4">
+<rect x="1" y="20" width="182" height="188" rx="14" fill="#0b1f3f" stroke="#1f3a66" stroke-width="1"/>
+<text x="18" y="52" font-size="12.5" font-weight="700" fill="#39d353" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">05 · AUTOMATE</text>
+<text x="18" y="84" font-size="20" font-weight="800" fill="#f2f6fb">AI layer</text>
+<text x="18" y="160" font-size="14.5" fill="#9aaecc">agents · skills · MCP</text>
+<text x="18" y="182" font-size="14.5" fill="#9aaecc">docs · checks</text>
+</g></g>
+</svg>

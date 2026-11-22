@@ -1,227 +1,326 @@
-<!-- Hallmark · macrostructure: Stat-Led × Long Document · tone: technical / premium · theme: Terminal · pre-emit critique: P5 H5 E4 S5 R4 V5 -->
-
 <div align="center">
 
-<img src="./banner.svg" width="100%" alt="Ludovic Delot — Business Intelligence and Data Analyst; Content Producer and Photographer" />
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/dark/banner.svg"><img src="./assets/light/banner.svg" width="100%" alt="Ludovic Delot: Business Intelligence Analyst, Power BI Developer, Data Analyst and AI Developer"></picture>
 
-`BUSINESS INTELLIGENCE` · `FINANCE` · `AUTOMATION` · `VISUAL STORYTELLING`
+<h3>Business Intelligence Analyst · Power BI Developer · Data Analyst · Analytics &amp; AI Engineer</h3>
 
-[LinkedIn](https://www.linkedin.com/in/delot/) · [Email](mailto:ludovicdelot99@gmail.com) · [Featured work](#featured-projects)
+📍 Mexico City &nbsp;·&nbsp; 🇲🇽 🇫🇷 Mexican &amp; French citizen (EU work rights) &nbsp;·&nbsp; 🗣️ Spanish · English · French
+
+<a href="https://www.linkedin.com/in/delot/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge" alt="Connect on LinkedIn" /></a>
+<a href="mailto:ludovicdelot99@gmail.com"><img src="https://img.shields.io/badge/Email-Write_me-1A7F37?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="#featured-work"><img src="https://img.shields.io/badge/Projects-See_the_work-0969DA?style=for-the-badge&logo=github&logoColor=white" alt="See featured projects" /></a>
+
+<sub><a href="#about">About</a> · <a href="#selected-impact">Impact</a> · <a href="#featured-work">Projects</a> · <a href="#stack">Stack</a> · <a href="#how-i-work">How I work</a> · <a href="#experience">Experience</a> · <a href="#education">Education</a></sub>
 
 </div>
 
-## Profile
+## About
 
-I build decision systems that connect business questions to reliable data products. At **LVMH**, I helped scale an Excel-based reporting workflow into a 20+ dashboard Power BI product on a 25-table model. Earlier work spans CPFR and supply-chain analytics at **Groupe SEB**, RPA investment analysis at **El Puerto de Liverpool**, and academic analytics at **EGADE Business School**.
+**Business Intelligence and Data Analyst** who builds end-to-end data products: **Python ETL**, **data modeling** (star schema, DAX, TMDL), governed **KPIs**, **Power BI dashboards** and self-service reporting, plus **generative AI and LLM agents** that document, check and automate the repetitive parts.
 
-Alongside data, I produce visual stories: festival photography for **Live Nation / OCESA**, content production for **Tomorrowland’s Lab of Tomorrow**, and client work through **Delot Media**.
+At **LVMH** (luxury & beauty) I proposed and led the move from Excel reporting to a **20+ dashboard Power BI product** on a **25-table semantic model**, now versioned as **PBIP in Git**. Before that: **CPFR, demand and inventory analytics** at **Groupe SEB**, **RPA and automation ROI** at **El Puerto de Liverpool**, and **research analytics with the OpenAI API** at **EGADE Business School**. **MSc in Finance** (Rennes School of Business) and **BSc in Business Intelligence** (Tec de Monterrey).
 
-Based in Mexico City · Mexican and French national · MSc International Management & Finance, Rennes School of Business
+> [!TIP]
+> **Now:** Data & BI (Power BI) at LVMH Beauty Tech · building a public **BigQuery + dbt** warehouse · shipping **Claude Code skills** for Power BI work.
 
-<img src="./info-card.svg" width="100%" alt="Animated terminal-inspired profile card summarizing Ludovic Delot’s role, experience, technical stack, education, location, and languages" />
+<details>
+<summary><b>Core skills</b> (full keyword list)</summary>
+<br/>
+
+**Business Intelligence** · Power BI · DAX · Power Query · TMDL / PBIP · Tableau · Data Modeling · Star Schema · ETL / ELT · Data Visualization · Dashboard Development · KPI Definition & Governance · Self-Service Analytics · Data Quality<br/>
+**Analytics** · SQL · Python · R · pandas · Statistics · Machine Learning · Demand Forecasting · Time Series · Supply Chain Analytics (CPFR) · Commercial & Retail Analytics · Financial Analysis<br/>
+**Data platforms** · Google Cloud (GCP) · BigQuery · dbt · Snowflake · PostgreSQL · MySQL · AWS · SharePoint · Git · GitHub Actions<br/>
+**AI & automation** · Generative AI · LLM Agents · Claude Code · Model Context Protocol (MCP) · OpenAI API · Agent Skills · RPA (UiPath)<br/>
+**Ways of working** · Stakeholder Management · Requirements Gathering · Documentation · Cross-functional BI Delivery · Training
+
+</details>
 
 ## Selected impact
 
-- **20+ Power BI dashboards** scaled from an initial four, with shared KPI logic for Marketing, Commercial, Retail, Finance, IT, and Maison teams.
-- **25-table entity-relationship model** connecting sell-out, stock, e-commerce, POS, product, launch, incentive, commission, forecast, and quota data.
-- **Hours → minutes** for recurring reporting preparation through Python-based cleaning and transformation.
-- **25,000+ SKU–store combinations** analyzed for CPFR across **300+ retail locations** at Groupe SEB.
-- **160+ creative clients** served through Delot Media since 2019, alongside real-time festival and artist content production.
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/dark/impact.svg"><img src="./assets/light/impact.svg" width="100%" alt="20+ Power BI dashboards scaled from four; 25-table semantic model; 25,000+ SKU-store combinations across 300+ stores; reporting prep from hours to minutes"></picture>
 
-## Featured projects
+## Featured work
 
-### [Portfolio construction through clustering](https://github.com/ludodelot/rsb-datascience-finance-clustering-portfolios)
+<sub>Public repositories. Employer work stays private; these projects use public or synthetic data.</sub>
 
-Builds equity portfolios from **105 US stocks** using K-Means and hierarchical clustering across market, ESG, and categorical feature sets. The project focuses on segmentation and portfolio construction—not return forecasting.
+### Power BI engineering
 
-`Python · clustering · finance · ESG analysis`
+<table>
+<tr>
+<td width="50%" valign="top">
 
-### [Semiconductor financial econometrics](https://github.com/ludodelot/rsb-financial-econometrics-semiconductors)
+<a href="https://github.com/ludodelot/FieldParameterSelector-PowerBI-Visual"><img src="./assets/dark/cards/fp-selector.svg#gh-dark-mode-only" width="100%" alt="Power BI custom visual: pick fields in the order you mean"></a><a href="https://github.com/ludodelot/FieldParameterSelector-PowerBI-Visual"><img src="./assets/light/cards/fp-selector.svg#gh-light-mode-only" width="100%" alt="Power BI custom visual: pick fields in the order you mean"></a>
 
-Studies return transmission and herding across the semiconductor supply chain using PCA, robust OLS, the CSAD herding test, and EGARCH volatility models.
+**[Ordered FP Selector](https://github.com/ludodelot/FieldParameterSelector-PowerBI-Visual)**<br/>
+Custom Power BI visual: report readers choose Field Parameter items **in the order they want**, reorder with ↑/↓ and keep that state between sessions. Grouped catalog, selection limits, `.pbiviz` release.
 
-`R · econometrics · PCA · EGARCH · market behavior`
+`TypeScript` `Power BI Visuals SDK` `Field Parameters`
 
-### [Purchasing Power Parity: Mexico × France](https://github.com/ludodelot/rsb-exchange-markets-ppp-mexico-france)
+</td>
+<td width="50%" valign="top">
 
-Tests absolute Purchasing Power Parity between Mexico and France over 2020–2024 with OLS, then interprets why the evidence rejects the hypothesis.
+<a href="https://github.com/ludodelot/transpose-matrix-pro"><img src="./assets/dark/cards/transpose-matrix.svg#gh-dark-mode-only" width="100%" alt="Power BI custom visual: rows and columns swapped in one click"></a><a href="https://github.com/ludodelot/transpose-matrix-pro"><img src="./assets/light/cards/transpose-matrix.svg#gh-light-mode-only" width="100%" alt="Power BI custom visual: rows and columns swapped in one click"></a>
 
-`R · exchange markets · OLS · hypothesis testing`
+**[Transpose Matrix Pro](https://github.com/ludodelot/transpose-matrix-pro)**<br/>
+The native matrix, rebuilt: **one-click transpose** with no DAX or re-query, blank/zero filtering, hierarchies and subtotals, field parameters, cross-filtering and an accessible grid.
 
-### [Easy Velo financial toolbox](https://github.com/ludodelot/rsb-financial-toolbox-easyvelo)
+`TypeScript` `DataViewMatrix` `Selection API`
 
-Develops an integrated financial model for a bicycle-subscription business plan, including P&L, balance sheet, WACC, funding structure, and break-even analysis.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-`Excel · financial modeling · valuation · scenario analysis`
+<a href="https://github.com/ludodelot/pbip-doc"><img src="./assets/dark/cards/pbip-doc.svg#gh-dark-mode-only" width="100%" alt="Claude Code skill: TMDL and PBIR to living documentation"></a><a href="https://github.com/ludodelot/pbip-doc"><img src="./assets/light/cards/pbip-doc.svg#gh-light-mode-only" width="100%" alt="Claude Code skill: TMDL and PBIR to living documentation"></a>
 
-## Toolbox
+**[pbip-doc](https://github.com/ludodelot/pbip-doc)**<br/>
+Claude Code skill that **documents a Power BI project from its source**: reads TMDL and PBIR, traces measure dependencies, flags orphans and circular DAX, writes Markdown docs and a quality report.
 
-**Business intelligence**<br>
-Power BI · DAX · Power Query · SQL · Tableau · Data Modeling · ETL · Data Visualization · KPI Governance
+`Claude Code` `TMDL` `PBIR` `DAX lineage`
 
-**Programming and quantitative work**<br>
-Python · R · Excel · Statistics · Econometrics · Machine Learning · Financial Analysis
+</td>
+<td width="50%" valign="top">
 
-**Automation, AI, and development**<br>
-UiPath · UiPath Insights · OpenAI API · Microsoft Copilot · Claude · Make · Notion · Google Cloud · AWS · Git · GitHub · PBIP
+<a href="https://github.com/ludodelot/pbip-manual"><img src="./assets/dark/cards/pbip-manual.svg#gh-dark-mode-only" width="100%" alt="Claude Code skill: Power BI report to PDF user manual"></a><a href="https://github.com/ludodelot/pbip-manual"><img src="./assets/light/cards/pbip-manual.svg#gh-light-mode-only" width="100%" alt="Claude Code skill: Power BI report to PDF user manual"></a>
 
-**Creative production**<br>
-Premiere Pro · Photoshop · Lightroom · Illustrator · Figma · Photography · Videography · Real-Time Editing
+**[pbip-manual](https://github.com/ludodelot/pbip-manual)**<br/>
+Turns a PBIP report into a **16:9 PDF user manual** in English, Spanish, Italian and French: one page per report page with wireframe, zones, sources, refresh and main KPI. Offline, read-only.
 
-## GitHub activity
+`Python` `reportlab` `PBIR` `unit tests`
 
-<img src="./contrib-heatmap.svg" width="100%" alt="Contribution calendar for the ludodelot GitHub account, including annual total and longest streak" />
+</td>
+</tr>
+</table>
 
-<sub>Generated daily in this repository from GitHub’s public contribution calendar.</sub>
+### Data modeling & SQL
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://github.com/ludodelot/sql-star-schema-northwind"><img src="./assets/dark/cards/star-schema.svg#gh-dark-mode-only" width="100%" alt="SQL dimensional model that catches a 3.19x freight error"></a><a href="https://github.com/ludodelot/sql-star-schema-northwind"><img src="./assets/light/cards/star-schema.svg#gh-light-mode-only" width="100%" alt="SQL dimensional model that catches a 3.19x freight error"></a>
+
+**[Northwind Star Schema](https://github.com/ludodelot/sql-star-schema-northwind)**<br/>
+Star schema from a flat sales export, six analytical queries and **twelve data-quality assertions**. The export mixes two grains: summing freight at the wrong one overstates it **3.19×**, and the build fails if any check does.
+
+`PostgreSQL` `BigQuery` `dimensional modeling` `data quality`
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://github.com/ludodelot/ecom-warehouse-dbt"><img src="./assets/dark/cards/ecom-dbt.svg#gh-dark-mode-only" width="100%" alt="BigQuery and dbt warehouse from staging to marts"></a><a href="https://github.com/ludodelot/ecom-warehouse-dbt"><img src="./assets/light/cards/ecom-dbt.svg#gh-light-mode-only" width="100%" alt="BigQuery and dbt warehouse from staging to marts"></a>
+
+**[ecom-warehouse-dbt](https://github.com/ludodelot/ecom-warehouse-dbt)** · *in progress*<br/>
+Modern data stack on public e-commerce data: **BigQuery + dbt** with staging → marts, explicit grain, data tests, lineage and a KPI layer (GMV, AOV, conversion, retention).
+
+`BigQuery` `dbt` `SQL` `analytics engineering`
+
+</td>
+</tr>
+</table>
+
+### AI agents & LLM tooling
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://github.com/ludodelot/commercial-demand-ai-agent-network-showcase"><img src="./assets/dark/cards/agent-network.svg#gh-dark-mode-only" width="100%" alt="Multi-agent system from demand to purchase orders"></a><a href="https://github.com/ludodelot/commercial-demand-ai-agent-network-showcase"><img src="./assets/light/cards/agent-network.svg#gh-light-mode-only" width="100%" alt="Multi-agent system from demand to purchase orders"></a>
+
+**[Commercial & Demand AI Agent Network](https://github.com/ludodelot/commercial-demand-ai-agent-network-showcase)**<br/>
+Specialist AI agents coordinate **demand planning, procurement, inventory and supplier agreements** through typed, auditable messages, with human approvals. Synthetic retailers and brands.
+
+`multi-agent` `LLM` `demand planning` `supply chain`
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://github.com/ludodelot/ats-resume-tailor"><img src="./assets/dark/cards/ats-tailor.svg#gh-dark-mode-only" width="100%" alt="Agent skill whose validator blocks claims without evidence"></a><a href="https://github.com/ludodelot/ats-resume-tailor"><img src="./assets/light/cards/ats-tailor.svg#gh-light-mode-only" width="100%" alt="Agent skill whose validator blocks claims without evidence"></a>
+
+**[ATS Resume Tailor](https://github.com/ludodelot/ats-resume-tailor)**<br/>
+Agent skill that tailors CVs to a job posting from one master profile. Every bullet cites an evidence id and **a validator fails the build on any unsupported number, title or date**.
+
+`agent skill` `Python` `CI` `zero deps`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://github.com/ludodelot/obsidian-moc-memory"><img src="./assets/dark/cards/moc-memory.svg#gh-dark-mode-only" width="100%" alt="Agent skill that turns a vault into durable AI memory"></a><a href="https://github.com/ludodelot/obsidian-moc-memory"><img src="./assets/light/cards/moc-memory.svg#gh-light-mode-only" width="100%" alt="Agent skill that turns a vault into durable AI memory"></a>
+
+**[Obsidian MOC Memory](https://github.com/ludodelot/obsidian-moc-memory)**<br/>
+Turns an Obsidian vault into **persistent memory for AI agents**: Map-of-Content retrieval, no-duplicate capture, and deterministic lint and index scripts. The LLM judges, scripts enforce rules.
+
+`agent skill` `AI memory` `Python` `Obsidian`
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://github.com/ludodelot/amazon-product-research-mcp"><img src="./assets/dark/cards/mcp-server.svg#gh-dark-mode-only" width="100%" alt="MCP server in TypeScript exposing tools an LLM can call"></a><a href="https://github.com/ludodelot/amazon-product-research-mcp"><img src="./assets/light/cards/mcp-server.svg#gh-light-mode-only" width="100%" alt="MCP server in TypeScript exposing tools an LLM can call"></a>
+
+**[Product Research MCP Server](https://github.com/ludodelot/amazon-product-research-mcp)**<br/>
+**Model Context Protocol** server that gives an AI assistant `search_products` and `get_product` tools over stdio. Strict TypeScript, Zod validation, Vitest tests, ESLint. Mock catalog.
+
+`MCP` `TypeScript` `Zod` `Vitest`
+
+</td>
+</tr>
+</table>
+
+<details>
+<summary><b>Data science, forecasting & quantitative finance</b> (10 more projects)</summary>
+<br/>
+
+| Project | What it shows | Stack |
+|---|---|---|
+| [Optimal tech portfolio](https://github.com/ludodelot/rsb-quantitative-finance-tech-portfolio) | CAPM, Fama-French 3-factor, Markowitz frontier and EMH tests on 10 assets, 2016–2025 | R · Quarto |
+| [Decathlon premium-member prediction](https://github.com/ludodelot/rsb-datascience-business-decathlon) | Cross-continent customer analytics and a Random Forest classifier (85.7% accuracy) | Python · scikit-learn |
+| [Applied AI for business (HSBC case)](https://github.com/ludodelot/bsc-ai-empresarial-hsbc-clustering) | RFM clustering, classifier comparison, an LLM chatbot and GPT-generated executive reports | Python · LLM |
+| [BlaBlaCar driver analytics](https://github.com/ludodelot/rsb-datascience-business-blablacar) | Behavior indices and Premium Club prediction on 97k trips | Python · classification |
+| [Gold futures forecasting](https://github.com/ludodelot/rsb_msc_ts2026_finance_team1) | SES, Holt, Holt-Winters and auto-ARIMA; Holt-Winters multiplicative wins on RMSE, MAE and MAPE | R · time series |
+| [Clustering portfolios](https://github.com/ludodelot/rsb-datascience-finance-clustering-portfolios) | Portfolios from 105 US stocks with K-Means and hierarchical clustering over market and ESG features | Python · clustering |
+| [Semiconductor econometrics](https://github.com/ludodelot/rsb-financial-econometrics-semiconductors) | Return transmission and herding: PCA, robust OLS, CSAD, EGARCH | R · econometrics |
+| [PPP: Mexico × France](https://github.com/ludodelot/rsb-exchange-markets-ppp-mexico-france) | Tests absolute purchasing power parity 2020–2024 and explains the rejection | R · OLS |
+| [NYC real estate + Snowflake](https://github.com/ludodelot/bsc-nyc-real-estate-snowflake-pipeline) | R exploratory analysis and a documented Snowflake lakehouse pipeline | R · Snowflake |
+| [Excel → MySQL ETL](https://github.com/ludodelot/bsc-mysql-etl-la-buena-vista) | ETL from spreadsheets into MySQL plus business SQL queries | MySQL · SQL |
+
+</details>
+
+## Stack
 
 <div align="center">
 
-<img src="./ludo-ascii.svg" width="72%" alt="Animated monochrome ASCII portrait of Ludovic Delot" />
+<sub><b>BI & MODELING</b></sub><br/>
+<img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI" />
+<img src="https://img.shields.io/badge/DAX-0B1F3F?style=for-the-badge" alt="DAX" />
+<img src="https://img.shields.io/badge/Power_Query-0B1F3F?style=for-the-badge" alt="Power Query" />
+<img src="https://img.shields.io/badge/TMDL_·_PBIP-0B1F3F?style=for-the-badge" alt="TMDL · PBIP" />
+<img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" alt="Tableau" />
+<img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge" alt="Excel" />
 
-<sub><code>portrait.render(mode="ascii", palette="steel-blue")</code></sub>
+<sub><b>DATA ENGINEERING & ANALYSIS</b></sub><br/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+<img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
+<img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" alt="R" />
+<img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas" />
+<img src="https://img.shields.io/badge/BigQuery-669DF6?style=for-the-badge&logo=googlebigquery&logoColor=white" alt="BigQuery" />
+<img src="https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white" alt="dbt" />
+<img src="https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white" alt="Snowflake" />
+<img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" alt="Google Cloud" />
+<img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge" alt="AWS" />
+
+<sub><b>AI & ENGINEERING</b></sub><br/>
+<img src="https://img.shields.io/badge/Claude_Code-D97757?style=for-the-badge&logo=claude&logoColor=white" alt="Claude Code" />
+<img src="https://img.shields.io/badge/MCP-0B1F3F?style=for-the-badge&logo=modelcontextprotocol&logoColor=white" alt="MCP" />
+<img src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge" alt="OpenAI API" />
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+<img src="https://img.shields.io/badge/UiPath-FA4616?style=for-the-badge&logo=uipath&logoColor=white" alt="UiPath" />
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+<img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
 
 </div>
 
-## Business Intelligence and data experience
+## How I work
 
-### [LVMH](https://www.linkedin.com/company/lvmh) · Data & Business Intelligence / Commercial Business Analyst
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/dark/pipeline.svg"><img src="./assets/light/pipeline.svg" width="100%" alt="Pipeline: sources, Python ETL with data-quality checks, a semantic model in DAX and TMDL versioned as PBIP in Git, Power BI with governed KPIs, and an AI layer of agents, skills and MCP"></picture>
 
-<sub>Luxury and Beauty · Mexico, France, and Spain · Feb 2025 – present</sub>
+- **One definition per KPI**, written down before the visual is built.
+- **Models live in Git** and get reviewed like code.
+- **AI cites its sources** and never invents a number.
 
-- Coordinate BI delivery across Business, Data, IT, Beauty Tech, and analyst teams; translate requirements into KPI definitions, model logic, documentation, and data-quality controls.
-- Build DAX measures and Python ETL automation for Power BI-ready datasets across Google Cloud Platform and SharePoint sources; work in PBIP with GitHub version control.
-- Proposed and led the Excel-to-Power BI transformation for Loewe and Acqua di Parma, scaling the product from four to 20+ automated dashboards and establishing a shared reporting source for Mexico.
-- Built the 25-table model and an MTD Summary used by the GM LatAm, senior Key Account Managers, and Retail Managers; trained three people to automate the UK ETL process.
+## Experience
+
+<table>
+<tr><td valign="top" width="28%">
+
+**[LVMH](https://www.linkedin.com/company/lvmh)**<br/>
+<sub>Feb 2025 – present<br/>Mexico City · France · Madrid</sub>
+
+</td><td valign="top">
+
+**Data & Business Intelligence (Power BI) Intern** · Beauty Tech, Global Data & AI · Madrid · *Jun 2026 – present*<br/>
+**Commercial Business Analyst Trainee** · Mexico City, then remote from France · *Feb 2025 – Jun 2026*
+
+- Proposed and led the Excel → Power BI transformation for Loewe and Acqua di Parma: **4 → 20+ automated dashboards** and one shared reporting source for Mexico.
+- Built the **25-table model** (sell-out, stock, e-commerce, POS, launches, incentives, commissions, forecasts, quotas) and an MTD summary used by the GM LatAm, senior KAMs and Retail Managers.
+- Cut recurring reporting prep from **hours to minutes** with **Python ETL** over Google Cloud (GCP) and SharePoint sources; wrote the **DAX** measures and led versioning of the worldwide Loewe and LVMH Iberia models in **PBIP with Git**.
+- Built data-model changes and BI projects presented to the **Loewe executive committee**.
+- Coordinate BI delivery across Business, Data, IT and Beauty Tech: requirements → KPI definitions → model logic → documentation → **data-quality controls**. Trained three people to automate the UK ETL.
+
+</td></tr>
+<tr><td valign="top">
+
+**[El Puerto de Liverpool](https://www.linkedin.com/company/elpuertodeliverpool)**<br/>
+<sub>Aug 2024 – Feb 2025<br/>Mexico City</sub>
+
+</td><td valign="top">
+
+**Automation Business Analyst** · Digital CoE, Finance
+- Evaluated the ROI of a **$27K USD** UiPath Insights investment; the business case showed it was not worth pursuing.
+- Built RPA ROI dashboards and performance monitoring for automation projects.
+
+</td></tr>
+<tr><td valign="top">
+
+**[EGADE Business School](https://www.linkedin.com/school/egadebusinessschool/)**<br/>
+<sub>Aug 2024 – Dec 2024<br/>Mexico City</sub>
+
+</td><td valign="top">
+
+**Data Analyst Intern** · Faculty & Research Intelligence
+- Power BI dashboards for publication output, SDG alignment, career development and tenure.
+- Python cleaning and EDA; **OpenAI API to classify academic articles**.
+
+</td></tr>
+<tr><td valign="top">
+
+**[Groupe SEB](https://www.linkedin.com/company/groupe-seb)**<br/>
+<sub>Feb 2024 – Aug 2024<br/>Mexico City</sub>
+
+</td><td valign="top">
+
+**National CPFR Supply Chain Data Analyst**
+- Demand and inventory analysis over **25,000+ SKU–store combinations** for the second-largest mass-retail client, in R and Excel.
+- Flagged out-of-stock, excess and slow-moving patterns across **300+ stores** for Sales, Supply Chain and Planning.
+
+</td></tr>
+</table>
+
+## Education
+
+**MSc International Management & Finance** · [Rennes School of Business](https://www.linkedin.com/school/renneschoolofbusiness/)<br/>
+<sub>Quantitative finance, econometrics, data science, forecasting, portfolio optimization, risk simulation, AI/fintech.</sub>
+
+**BSc Business Intelligence** · [Tecnológico de Monterrey](https://www.linkedin.com/school/tecdemonterrey/) · 97/100 · 3.8/4.0 GPA<br/>
+<sub>Databases, Power BI and Tableau, Python and R, data mining, risk analysis. President of the Business Intelligence Student Committee.</sub>
 
 <details>
-<summary><strong>Role progression and additional detail</strong></summary>
+<summary><b>Certifications & honors</b></summary>
+<br/>
 
-**Data & Business Intelligence (Power BI) Intern** · Iberia, Mexico, and global dashboards · Madrid · *Jun 2026 – present*
+**Certifications** · Microsoft Azure AI Fundamentals (AI-900) · Google Cloud Foundations · Introduction to AWS · SQL for Finance Professionals · Financial Statements in Power BI · Claude Code 101
 
-- Support production delivery, anomaly detection, business-rule validation, and cross-market BI coordination.
-
-**Commercial Business Analyst Trainee (Remote)** · France, managing Mexico’s BI operation · *Aug 2025 – Jun 2026*
-
-- Replaced manual workflows with self-service reporting used by Marketing, Commercial, Retail, and Maison HQ stakeholders in Italy and Spain.
-- Connected sell-out, stock, e-commerce, POS master data, retailer data, launches, incentives, commissions, forecasts, and quotas.
-
-**Commercial Business Analyst Trainee** · Mexico City · *Feb 2025 – Aug 2025*
-
-- Built the first four dashboards and recurring sell-out, inventory, e-commerce, MTD/YTD, OOS, and lost-sales analyses.
-- Coordinated product master data and new-item setup for Chedraui and Elektra.
-
-`Power BI · DAX · SQL query logic · Python ETL · Data Modeling · KPI Governance · Commercial Analytics`
+**Honors** · Winner, Banorte Ideation & Prototyping Challenge · Winner, Patagonia Conscious Capitalism & Story Prototyping Challenge · Winner, CDL campus phase (INC MTY 2023) · Highest entering GPA scholarship, Tec de Monterrey
 
 </details>
 
-### [Groupe SEB](https://www.linkedin.com/company/groupe-seb) · National CPFR Supply Chain Data Analyst
+## GitHub activity
 
-<sub>Consumer goods · Mexico City · Feb 2024 – Aug 2024</sub>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./contrib-heatmap.svg"><img src="./contrib-heatmap-light.svg" width="100%" alt="Contribution calendar for the ludodelot GitHub account, with annual total and longest streak"></picture>
 
-- Analyzed demand and inventory across 25,000+ SKU–store combinations for the company’s second-largest mass-retail client using Excel and R.
-- Identified out-of-stock, excess-inventory, and slow-moving patterns across 300+ locations; communicated recommendations to Sales, Marketing, Supply Chain, and Planning.
-
-`CPFR · Supply Chain Analytics · R · Excel · ETL · Data Modeling · Demand Forecasting`
-
-### [El Puerto de Liverpool](https://www.linkedin.com/company/elpuertodeliverpool) · Automation Business Analyst
-
-<sub>Digital Center of Excellence, Finance · Mexico City · Aug 2024 – Feb 2025</sub>
-
-- Evaluated the feasibility and ROI of a **$27,000 USD** UiPath Insights investment; the business case showed that it was not worth pursuing.
-- Designed RPA ROI dashboards and implemented performance monitoring for automation projects.
-
-`UiPath · RPA · ROI Analysis · Finance · Stakeholder Management`
-
-### [EGADE Business School](https://www.linkedin.com/school/egadebusinessschool/) · Data Analyst Intern
-
-<sub>Faculty and Research Intelligence · Mexico City · Aug 2024 – Dec 2024</sub>
-
-- Built Power BI dashboards for publication output, SDG alignment, career development, and tenure analysis.
-- Used Python for cleaning and exploratory analysis, and the OpenAI API to classify academic articles.
-
-`Power BI · Python · EDA · OpenAI API · Academic Analytics`
-
-## Content, marketing, and photography experience
-
-### Delot Media · Founder
-
-<sub>Mexico City · Aug 2019 – present</sub>
-
-- Served 160+ clients across portrait, product, fashion, video, social content, and analytics work.
-- Managed sales tracking for 10+ concurrent clients and covered events at Autódromo Hermanos Rodríguez and Lunario del Auditorio Nacional.
-
-### [Live Nation](https://www.linkedin.com/company/live-nation) / [OCESA](https://www.linkedin.com/company/ocesa) · Photographer and content producer
-
-<sub>Concert and Festival Business Units · Feb 2023 – Mar 2025</sub>
-
-- Official photographer for Vive Latino 2024, covering 12+ headline artists with same-day editing; delivered the highest official-account post volume on day two of Festival Arre 2024 while covering 9+ artists.
-- Produced press, backstage, short-form, and aftermovie content for festivals, concerts, and two internationally touring DJs at EDC México.
-
-### [Tomorrowland](https://be.linkedin.com/company/tomorrowland) · Content Marketing Producer, Lab of Tomorrow
-
-<sub>Boom, Belgium · Jul 2026</sub>
-
-- Produced and delivered same-day short-form, long-form, interview, and digital-screen content across the entertainment-technology program.
-- Recorded and edited Lab of Tomorrow’s most-viral Reel to date.
-
-<details>
-<summary><strong>More creative and marketing work</strong></summary>
-
-**Piso 40 · Content Marketing Specialist** · *May 2024 – May 2025*<br>
-Built the restaurant’s digital brand, photography/video system, content calendar, and KPI-led channel strategy.
-
-**COPARMEX University Chapter · Marketing & Communications Coordinator** · *Dec 2024 – Aug 2025*<br>
-Worked with the President and Vice President on strategic initiatives and institutional alignment with Tecnológico de Monterrey.
-
-**Tecnológico de Monterrey · Marketing Communications Intern (“Storyteller”)** · *Aug 2022 – Jul 2024*<br>
-Managed social content and event coverage, wrote for CONECTA, and delivered projects involving Holon IQ, Starbucks Mexico, and NFL Mexico.
-
-`Content Production · Photography · Videography · Adobe Creative Cloud · Content Strategy · Social Analytics`
-
-</details>
-
-## Education, leadership, and entrepreneurship
-
-### [Rennes School of Business](https://www.linkedin.com/school/renneschoolofbusiness/) · MSc International Management & Finance
-
-<sub>Rennes, France</sub>
-
-Quantitative finance, econometrics, data science, Python, forecasting, portfolio optimization, risk simulation, financial modeling, and AI/fintech applications.
-
-### [Tecnológico de Monterrey](https://www.linkedin.com/school/tecdemonterrey/) · BSc Business Intelligence
-
-<sub>Mexico City · 97/100 · 3.8/4.0 GPA</sub>
-
-Data-driven decision-making, database integration, Power BI and Tableau, Python and R, data mining, risk analysis, and communication. Scholarship for the highest entering GPA from high school; winner of the CDL campus phase for INC MTY 2023.
-
-<details>
-<summary><strong>Leadership, venture work, certifications, and honors</strong></summary>
-
-**President, Business Intelligence Student Committee** · *May 2024 – Jun 2025*<br>
-Led representation and stakeholder communication for the Business Intelligence student cohort.
-
-**Projectype · Co-Founder, Finance and Technology Operations** · *Dec 2024 – Jun 2026*<br>
-Owned budgeting, forecasting, profitability analysis, governance, and automated workflows built with Notion, Make, and Power BI.
-
-**Certifications**<br>
-Microsoft Azure AI Fundamentals (AI-900) · Inside LVMH Certificate · Introduction to AWS · Google Cloud Foundations · SQL for Finance Professionals · Financial Statements in Power BI · Notion Essentials, Advanced, and Certified Admin · Claude Code 101 · McKinsey Forward · TOEFL ITP
-
-**Honors**<br>
-Winner, Banorte Ideation & Prototyping Challenge · Winner, Patagonia Conscious Capitalism and Story Prototyping Challenge · Winner, CDL Campus phase · 100% Venture Lab Summer Sprint Scholarship
-
-**Languages**<br>
-Spanish (native) · English (professional, TOEFL ITP) · French (elementary)
-
-</details>
-
----
+<sub>Regenerated daily by a GitHub Action in this repo from the public contribution calendar.</sub>
 
 <div align="center">
 
-**Business intelligence with commercial context. Visual work with analytical discipline.**
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/dark/footer.svg"><img src="./assets/light/footer.svg" width="100%" alt=""></picture>
 
-[Connect on LinkedIn](https://www.linkedin.com/in/delot/) · [Send an email](mailto:ludovicdelot99@gmail.com)
+<img src="./ludo-ascii.svg" width="46%" alt="Animated ASCII portrait of Ludovic Delot" />
 
-<img src="./banner_footer.svg" width="100%" alt="" />
+<sub><code>portrait.render(mode="ascii", palette="steel-blue")</code></sub>
+
+**Clean data. Clear models. Decisions that hold up.**
+
+<a href="https://www.linkedin.com/in/delot/"><img src="https://img.shields.io/badge/Let's_talk_data-LinkedIn-0A66C2?style=for-the-badge" alt="Let's talk data on LinkedIn" /></a>
 
 </div>

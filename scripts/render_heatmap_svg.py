@@ -16,7 +16,13 @@ LEFT_PAD = 28
 TOP_PAD = 20
 BOTTOM_PAD = 34
 
-PALETTE = ["#161B22", "#0E4429", "#1F6FB2", "#2E86DE", "#4A90D9", "#39D353"]
+THEMES = {
+    "dark": {"cells": ["#161B22", "#0E4429", "#1F6FB2", "#2E86DE", "#4A90D9", "#39D353"],
+             "label": "#7E93B8", "stats": "#5FA8E0", "out": "contrib-heatmap.svg"},
+    "light": {"cells": ["#EBEFF5", "#B6E3C4", "#80B8F5", "#4A95E8", "#0969DA", "#1A7F37"],
+              "label": "#6E7781", "stats": "#0969DA", "out": "contrib-heatmap-light.svg"},
+}
+PALETTE = THEMES["dark"]["cells"]
 # level:    none      1          2          3          4          5(best-day highlight)
 
 MONTHS = [
@@ -68,7 +74,10 @@ def month_labels(weeks: list[list[dict | None]]) -> list[tuple[int, str]]:
     return labels
 
 
-def build_svg(data: dict) -> str:
+def build_svg(data: dict, theme: str = "dark") -> str:
+    palette = THEMES[theme]["cells"]
+    label_c = THEMES[theme]["label"]
+    stats_c = THEMES[theme]["stats"]
     days = data["days"]
     stats = data["stats"]
     weeks = build_weeks(days)
@@ -92,7 +101,7 @@ def build_svg(data: dict) -> str:
     for wi, label in month_labels(weeks):
         x = LEFT_PAD + wi * STEP
         parts.append(
-            f'<text x="{x}" y="{TOP_PAD - 6}" font-size="10" fill="#7E93B8">{label}</text>'
+            f'<text x="{x}" y="{TOP_PAD - 6}" font-size="10" fill="{label_c}">{label}</text>'
         )
 
     # Day cells, staggered diagonally (col + row) so they slide in like a wave.
@@ -104,9 +113,9 @@ def build_svg(data: dict) -> str:
             if day is None:
                 continue
             level = min(day.get("level", 0), 4)
-            color = PALETTE[level]
+            color = palette[level]
             if best_date and day["date"] == best_date and level > 0:
-                color = PALETTE[5]
+                color = palette[5]
             title = f'{day["count"]} contribution{"s" if day["count"] != 1 else ""} on {day["date"]}'
             parts.append(
                 f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="2.5" fill="{color}">'
@@ -115,19 +124,19 @@ def build_svg(data: dict) -> str:
 
     # Legend: Less -> More.
     legend_y = height - BOTTOM_PAD + 22
-    parts.append(f'<text x="{LEFT_PAD}" y="{legend_y}" font-size="10" fill="#7E93B8">Less</text>')
+    parts.append(f'<text x="{LEFT_PAD}" y="{legend_y}" font-size="10" fill="{label_c}">Less</text>')
     lx = LEFT_PAD + 34
-    for level, color in enumerate(PALETTE[:5]):
+    for level, color in enumerate(palette[:5]):
         parts.append(f'<rect x="{lx}" y="{legend_y - 9}" width="{CELL}" height="{CELL}" rx="2.5" fill="{color}"/>')
         lx += STEP
-    parts.append(f'<text x="{lx + 4}" y="{legend_y}" font-size="10" fill="#7E93B8">More</text>')
+    parts.append(f'<text x="{lx + 4}" y="{legend_y}" font-size="10" fill="{label_c}">More</text>')
 
     # Stats footer, right-aligned.
     total = stats.get("total", 0)
     streak = stats.get("longest_streak", 0)
     stats_text = f'{total} contributions in the last year  ·  longest streak {streak} day{"s" if streak != 1 else ""}'
     parts.append(
-        f'<text x="{width - 10}" y="{legend_y}" font-size="10" fill="#5FA8E0" text-anchor="end">{stats_text}</text>'
+        f'<text x="{width - 10}" y="{legend_y}" font-size="10" fill="{stats_c}" text-anchor="end">{stats_text}</text>'
     )
 
     parts.append("</svg>")
@@ -136,10 +145,10 @@ def build_svg(data: dict) -> str:
 
 def main() -> None:
     data = load_data()
-    svg = build_svg(data)
-    with (ROOT / "contrib-heatmap.svg").open("w", encoding="utf-8") as f:
-        f.write(svg)
-    print(f"Saved: {ROOT / 'contrib-heatmap.svg'}")
+    for theme, cfg in THEMES.items():
+        out = ROOT / cfg["out"]
+        out.write_text(build_svg(data, theme), encoding="utf-8")
+        print(f"Saved: {out}")
 
 
 if __name__ == "__main__":
