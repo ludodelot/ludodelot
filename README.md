@@ -49,7 +49,7 @@ At **LVMH** (luxury & beauty) I proposed and led the move from Excel reporting t
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/ludodelot/FieldParameterSelector-PowerBI-Visual"><img src="./assets/dark/cards/fp-selector.svg#gh-dark-mode-only" width="100%" alt="Power BI custom visual: pick fields in the order you mean"></a><a href="https://github.com/ludodelot/FieldParameterSelector-PowerBI-Visual"><img src="./assets/light/cards/fp-selector.svg#gh-light-mode-only" width="100%" alt="Power BI custom visual: pick fields in the order you mean"></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/dark/cards/fp-selector.svg"><img src="./assets/light/cards/fp-selector.svg" width="100%" alt="Power BI custom visual: pick fields in the order you mean"></picture>
 
 **[Ordered FP Selector](https://github.com/ludodelot/FieldParameterSelector-PowerBI-Visual)**<br/>
 Custom Power BI visual: report readers choose Field Parameter items **in the order they want**, reorder with ↑/↓ and keep that state between sessions. Grouped catalog, selection limits, `.pbiviz` release.
@@ -59,7 +59,7 @@ Custom Power BI visual: report readers choose Field Parameter items **in the ord
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/ludodelot/transpose-matrix-pro"><img src="./assets/dark/cards/transpose-matrix.svg#gh-dark-mode-only" width="100%" alt="Power BI custom visual: rows and columns swapped in one click"></a><a href="https://github.com/ludodelot/transpose-matrix-pro"><img src="./assets/light/cards/transpose-matrix.svg#gh-light-mode-only" width="100%" alt="Power BI custom visual: rows and columns swapped in one click"></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/dark/cards/transpose-matrix.svg"><img src="./assets/light/cards/transpose-matrix.svg" width="100%" alt="Power BI custom visual: rows and columns swapped in one click"></picture>
 
 **[Transpose Matrix Pro](https://github.com/ludodelot/transpose-matrix-pro)**<br/>
 The native matrix, rebuilt: **one-click transpose** with no DAX or re-query, blank/zero filtering, hierarchies and subtotals, field parameters, cross-filtering and an accessible grid.
@@ -71,7 +71,7 @@ The native matrix, rebuilt: **one-click transpose** with no DAX or re-query, bla
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/ludodelot/pbip-doc"><img src="./assets/dark/cards/pbip-doc.svg#gh-dark-mode-only" width="100%" alt="Claude Code skill: TMDL and PBIR to living documentation"></a><a href="https://github.com/ludodelot/pbip-doc"><img src="./assets/light/cards/pbip-doc.svg#gh-light-mode-only" width="100%" alt="Claude Code skill: TMDL and PBIR to living documentation"></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/dark/cards/pbip-doc.svg"><img src="./assets/light/cards/pbip-doc.svg" width="100%" alt="Claude Code skill: TMDL and PBIR to living documentation"></picture>
 
 **[pbip-doc](https://github.com/ludodelot/pbip-doc)**<br/>
 Claude Code skill that **documents a Power BI project from its source**: reads TMDL and PBIR, traces measure dependencies, flags orphans and circular DAX, writes Markdown docs and a quality report.
@@ -81,7 +81,7 @@ Claude Code skill that **documents a Power BI project from its source**: reads T
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/ludodelot/pbip-manual"><img src="./assets/dark/cards/pbip-manual.svg#gh-dark-mode-only" width="100%" alt="Claude Code skill: Power BI report to PDF user manual"></a><a href="https://github.com/ludodelot/pbip-manual"><img src="./assets/light/cards/pbip-manual.svg#gh-light-mode-only" width="100%" alt="Claude Code skill: Power BI report to PDF user manual"></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/dark/cards/pbip-manual.svg"><img src="./assets/light/cards/pbip-manual.svg" width="100%" alt="Claude Code skill: Power BI report to PDF user manual"></picture>
 
 **[pbip-manual](https://github.com/ludodelot/pbip-manual)**<br/>
 Turns a PBIP report into a **16:9 PDF user manual** in English, Spanish, Italian and French: one page per report page with wireframe, zones, sources, refresh and main KPI. Offline, read-only.
@@ -98,7 +98,7 @@ Turns a PBIP report into a **16:9 PDF user manual** in English, Spanish, Italian
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/ludodelot/sql-star-schema-northwind"><img src="./assets/dark/cards/star-schema.svg#gh-dark-mode-only" width="100%" alt="SQL dimensional model that catches a 3.19x freight error"></a><a href="https://github.com/ludodelot/sql-star-schema-northwind"><img src="./assets/light/cards/star-schema.svg#gh-light-mode-only" width="100%" alt="SQL dimensional model that catches a 3.19x freight error"></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/dark/cards/star-schema.svg"><img src="./assets/light/cards/star-schema.svg" width="100%" alt="SQL dimensional model that catches a 3.19x freight error"></picture>
 
 **[Northwind Star Schema](https://github.com/ludodelot/sql-star-schema-northwind)**<br/>
 Star schema from a flat sales export, six analytical queries and **twelve data-quality assertions**. The export mixes two grains: summing freight at the wrong one overstates it **3.19×**, and the build fails if any check does.
@@ -108,7 +108,7 @@ Star schema from a flat sales export, six analytical queries and **twelve data-q
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/ludodelot/ecom-warehouse-dbt"><img src="./assets/dark/cards/ecom-dbt.svg#gh-dark-mode-only" width="100%" alt="BigQuery and dbt warehouse from staging to marts"></a><a href="https://github.com/ludodelot/ecom-warehouse-dbt"><img src="./assets/light/cards/ecom-dbt.svg#gh-light-mode-only" width="100%" alt="BigQuery and dbt warehouse from staging to marts"></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/dark/cards/ecom-dbt.svg"><img src="./assets/light/cards/ecom-dbt.svg" width="100%" alt="BigQuery and dbt warehouse from staging to marts"></picture>
 
 **[ecom-warehouse-dbt](https://github.com/ludodelot/ecom-warehouse-dbt)** · *in progress*<br/>
 Modern data stack on public e-commerce data: **BigQuery + dbt** with staging → marts, explicit grain, data tests, lineage and a KPI layer (GMV, AOV, conversion, retention).
@@ -125,7 +125,7 @@ Modern data stack on public e-commerce data: **BigQuery + dbt** with staging →
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/ludodelot/commercial-demand-ai-agent-network-showcase"><img src="./assets/dark/cards/agent-network.svg#gh-dark-mode-only" width="100%" alt="Multi-agent system from demand to purchase orders"></a><a href="https://github.com/ludodelot/commercial-demand-ai-agent-network-showcase"><img src="./assets/light/cards/agent-network.svg#gh-light-mode-only" width="100%" alt="Multi-agent system from demand to purchase orders"></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/dark/cards/agent-network.svg"><img src="./assets/light/cards/agent-network.svg" width="100%" alt="Multi-agent system from demand to purchase orders"></picture>
 
 **[Commercial & Demand AI Agent Network](https://github.com/ludodelot/commercial-demand-ai-agent-network-showcase)**<br/>
 Specialist AI agents coordinate **demand planning, procurement, inventory and supplier agreements** through typed, auditable messages, with human approvals. Synthetic retailers and brands.
@@ -135,7 +135,7 @@ Specialist AI agents coordinate **demand planning, procurement, inventory and su
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/ludodelot/ats-resume-tailor"><img src="./assets/dark/cards/ats-tailor.svg#gh-dark-mode-only" width="100%" alt="Agent skill whose validator blocks claims without evidence"></a><a href="https://github.com/ludodelot/ats-resume-tailor"><img src="./assets/light/cards/ats-tailor.svg#gh-light-mode-only" width="100%" alt="Agent skill whose validator blocks claims without evidence"></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/dark/cards/ats-tailor.svg"><img src="./assets/light/cards/ats-tailor.svg" width="100%" alt="Agent skill whose validator blocks claims without evidence"></picture>
 
 **[ATS Resume Tailor](https://github.com/ludodelot/ats-resume-tailor)**<br/>
 Agent skill that tailors CVs to a job posting from one master profile. Every bullet cites an evidence id and **a validator fails the build on any unsupported number, title or date**.
@@ -147,7 +147,7 @@ Agent skill that tailors CVs to a job posting from one master profile. Every bul
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/ludodelot/obsidian-moc-memory"><img src="./assets/dark/cards/moc-memory.svg#gh-dark-mode-only" width="100%" alt="Agent skill that turns a vault into durable AI memory"></a><a href="https://github.com/ludodelot/obsidian-moc-memory"><img src="./assets/light/cards/moc-memory.svg#gh-light-mode-only" width="100%" alt="Agent skill that turns a vault into durable AI memory"></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/dark/cards/moc-memory.svg"><img src="./assets/light/cards/moc-memory.svg" width="100%" alt="Agent skill that turns a vault into durable AI memory"></picture>
 
 **[Obsidian MOC Memory](https://github.com/ludodelot/obsidian-moc-memory)**<br/>
 Turns an Obsidian vault into **persistent memory for AI agents**: Map-of-Content retrieval, no-duplicate capture, and deterministic lint and index scripts. The LLM judges, scripts enforce rules.
@@ -157,7 +157,7 @@ Turns an Obsidian vault into **persistent memory for AI agents**: Map-of-Content
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/ludodelot/amazon-product-research-mcp"><img src="./assets/dark/cards/mcp-server.svg#gh-dark-mode-only" width="100%" alt="MCP server in TypeScript exposing tools an LLM can call"></a><a href="https://github.com/ludodelot/amazon-product-research-mcp"><img src="./assets/light/cards/mcp-server.svg#gh-light-mode-only" width="100%" alt="MCP server in TypeScript exposing tools an LLM can call"></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/dark/cards/mcp-server.svg"><img src="./assets/light/cards/mcp-server.svg" width="100%" alt="MCP server in TypeScript exposing tools an LLM can call"></picture>
 
 **[Product Research MCP Server](https://github.com/ludodelot/amazon-product-research-mcp)**<br/>
 **Model Context Protocol** server that gives an AI assistant `search_products` and `get_product` tools over stdio. Strict TypeScript, Zod validation, Vitest tests, ESLint. Mock catalog.
