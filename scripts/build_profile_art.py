@@ -124,37 +124,112 @@ def banner(t):
                "Power BI, DAX, SQL, Python, dbt, BigQuery and LLM agents.", body, style)
 
 
-# --------------------------------------------------------------------------- impact
-IMPACT = [
-    ("20+", "Power BI dashboards", "scaled from 4 · shared KPIs"),
-    ("25", "table semantic model", "sell-out → stock → quotas"),
-    ("25K+", "SKU–store combinations", "CPFR across 300+ stores"),
-    ("h→min", "reporting prep time", "Python ETL automation"),
-]
-
-
+# --------------------------------------------------------------------------- impact (bento)
 def impact(t):
-    style = """.tile{animation:rise .8s cubic-bezier(.2,.8,.3,1) both}.t1{animation-delay:.15s}.t2{animation-delay:.3s}.t3{animation-delay:.45s}
+    style = """.tile{animation:rise .8s cubic-bezier(.2,.8,.3,1) both}
+.d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}.d4{animation-delay:.4s}.d5{animation-delay:.5s}.d6{animation-delay:.6s}
+.seg{transform-box:fill-box;transform-origin:left;animation:grow-x .9s cubic-bezier(.2,.8,.3,1) both}
+.s1{animation-delay:.5s}.s2{animation-delay:.8s}.s3{animation-delay:1.1s}.s4{animation-delay:1.4s}
+.bar{transform-box:fill-box;transform-origin:bottom;animation:grow-y 1s cubic-bezier(.2,.8,.3,1) both}
+.pulse{transform-box:fill-box;transform-origin:center;animation:pulse 2.4s ease-in-out infinite}
 .glow{animation:glow 3.2s ease-in-out infinite}
+.edge{stroke-dasharray:4 5;animation:flow 1.2s linear infinite}
 @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-@keyframes glow{0%,100%{opacity:.35}50%{opacity:1}}"""
-    accents = [t["green"], t["blue"], t["sky"], t["green"]]
-    tiles = []
-    for i, (num, label, sub) in enumerate(IMPACT):
-        x = i * 242
-        tiles.append(f"""<g transform="translate({x} 0)"><g class="tile t{i}">
-<rect x="1" y="1" width="234" height="168" rx="14" fill="{t['card']}" stroke="{t['border']}"/>
-<rect class="glow" x="24" y="24" width="34" height="5" rx="2.5" fill="{accents[i]}"/>
-<text x="22" y="94" font-size="{50 if len(num) < 5 else 44}" font-weight="800" fill="url(#num)" letter-spacing="-1">{esc(num)}</text>
-<text x="24" y="126" font-size="17" font-weight="700" fill="{t['text']}">{esc(label)}</text>
-<text x="24" y="150" font-size="14.5" fill="{t['muted']}">{esc(sub)}</text>
-</g></g>""")
-    body = (f'<defs><linearGradient id="num" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{t["num0"]}"/>'
-            f'<stop offset="1" stop-color="{t["num1"]}"/></linearGradient></defs>\n' + "\n".join(tiles))
-    return svg(962, 170, "Selected impact",
-               "20+ Power BI dashboards scaled from four; a 25-table semantic model; 25,000+ SKU-store "
-               "combinations analyzed across 300+ stores; reporting prep cut from hours to minutes with Python ETL.",
-               body, style)
+@keyframes grow-x{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes grow-y{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes pulse{0%,100%{transform:scale(.8);opacity:.6}50%{transform:scale(1.25);opacity:1}}
+@keyframes glow{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes flow{to{stroke-dashoffset:-18}}"""
+
+    def tile(x, y, w, h, cls, inner):
+        return (f'<g transform="translate({x} {y})"><g class="tile {cls}">'
+                f'<rect x="1" y="1" width="{w - 2}" height="{h - 2}" rx="16" fill="{t["card"]}" stroke="{t["border"]}"/>'
+                f'{inner}</g></g>')
+
+    def kicker(x, y, s, color):
+        return (f'<rect class="glow" x="{x}" y="{y - 13}" width="26" height="5" rx="2.5" fill="{color}"/>'
+                f'<text x="{x + 36}" y="{y - 7}" font-size="12.5" font-weight="700" letter-spacing="1.3" '
+                f'fill="{t["dim"]}" font-family="{MONO}">{esc(s)}</text>')
+
+    def big(x, y, s, size=56):
+        return f'<text x="{x}" y="{y}" font-size="{size}" font-weight="800" letter-spacing="-1.5" fill="url(#num)">{esc(s)}</text>'
+
+    def label(x, y, s, size=17, color=None, weight=700):
+        return f'<text x="{x}" y="{y}" font-size="{size}" font-weight="{weight}" fill="{color or t["text"]}">{esc(s)}</text>'
+
+    # A — years in data with a career timeline (left = 4.5 years ago, right = today)
+    W = 412
+    segs = [  # start, end as fraction of the 4.5-year window, colour, label
+        (0.00, 0.39, t["deep"], "BSc Business Intelligence"),
+        (0.39, 0.50, t["sky"], "Groupe SEB"),
+        (0.50, 0.61, t["blue"], "Liverpool · EGADE"),
+        (0.61, 1.00, t["green"], "LVMH"),
+    ]
+    tl = ""
+    for i, (a, b, col, _) in enumerate(segs):
+        tl += f'<rect class="seg s{i + 1}" x="{28 + a * W:.1f}" y="150" width="{(b - a) * W - 3:.1f}" height="12" rx="6" fill="{col}"/>'
+    tl += (f'<text x="28" y="186" font-size="13" fill="{t["muted"]}">BSc in BI</text>'
+           f'<text x="{28 + 0.39 * W:.0f}" y="186" font-size="13" fill="{t["muted"]}">SEB</text>'
+           f'<text x="{28 + 0.50 * W:.0f}" y="186" font-size="13" fill="{t["muted"]}">LIV·EGADE</text>'
+           f'<text x="{28 + 0.80 * W:.0f}" y="186" font-size="13" font-weight="700" fill="{t["text"]}" text-anchor="middle">LVMH</text>'
+           f'<text x="{28 + W}" y="186" font-size="13" fill="{t["muted"]}" text-anchor="end">now</text>'
+           f'<circle class="pulse" cx="{28 + W - 4}" cy="156" r="7" fill="{t["green"]}"/>'
+           f'<text x="{28 + 0.39 * W:.0f}" y="140" font-size="12" fill="{t["dim"]}" font-family="{MONO}">2024</text>')
+    a = tile(0, 0, 470, 212, "", kicker(28, 40, "YEARS IN DATA", t["green"])
+             + big(26, 104, "4.5+", 64)
+             + label(176, 78, "years in data", 21)
+             + label(176, 102, "BI degree + 4 data roles", 15, t["muted"], 500)
+             + tl)
+
+    # B — dashboards 4 → 20+
+    bars = ""
+    for i, h in enumerate([16, 22, 30, 40, 52, 66, 82]):
+        bars += f'<rect class="bar" style="animation-delay:{.4 + i * .08:.2f}s" x="{120 + i * 15}" y="{176 - h}" width="10" height="{h}" rx="2" fill="url(#barg)"/>'
+    b = tile(482, 0, 230, 212, "d1", kicker(24, 40, "DASHBOARDS", t["blue"])
+             + big(22, 104, "20+") + label(24, 132, "Power BI dashboards", 16)
+             + label(24, 156, "scaled from 4", 14, t["muted"], 500)
+             + f'<g transform="translate(0 20)" opacity=".9">{bars}</g>'
+             .replace('translate(0 20)', 'translate(0 18)'))
+
+    # C — semantic model
+    dims = [(180, 120), (212, 150), (180, 180), (148, 150)]
+    schema = "".join(f'<line class="edge" x1="180" y1="150" x2="{x}" y2="{y}" stroke="{t["blue"]}" stroke-width="1.6"/>' for x, y in dims)
+    schema += "".join(f'<rect x="{x - 11}" y="{y - 8}" width="22" height="16" rx="4" fill="{t["card2"]}" stroke="{t["border"]}"/>' for x, y in dims)
+    schema += f'<rect x="167" y="141" width="26" height="18" rx="4" fill="{t["blue"]}"/>'
+    c = tile(724, 0, 236, 212, "d2", kicker(24, 40, "DATA MODEL", t["sky"])
+             + big(22, 104, "25") + label(24, 132, "table semantic", 16) + label(24, 154, "model", 16)
+             + label(24, 180, "sell-out → quotas", 13.5, t["muted"], 500)
+             + schema)
+
+    # Row 2
+    y2 = 224
+    h2 = 156
+    d = tile(0, y2, 231, h2, "d3", kicker(24, 38, "CPFR", t["green"])
+             + big(22, 96, "25K+", 48) + label(24, 122, "SKU–store combinations", 14.5)
+             + label(24, 142, "across 300+ stores", 13.5, t["muted"], 500))
+    e = tile(243, y2, 231, h2, "d4", kicker(24, 38, "AUTOMATION", t["blue"])
+             + f'<text x="22" y="96" font-size="48" font-weight="800" letter-spacing="-1.5" fill="url(#num)">h<tspan fill="{t["green"]}">→</tspan>min</text>'
+             + label(24, 122, "reporting prep time", 15)
+             + label(24, 142, "with Python ETL", 13.5, t["muted"], 500))
+    f = tile(486, y2, 231, h2, "d5", kicker(24, 38, "MARKETS", t["sky"])
+             + big(22, 96, "3", 48) + label(58, 96, "countries", 20)
+             + label(24, 122, "Mexico · France · Spain", 15)
+             + label(24, 142, "remote and on-site BI", 13.5, t["muted"], 500))
+    g = tile(729, y2, 231, h2, "d6", kicker(24, 38, "SHIPPED", t["green"])
+             + big(22, 96, "2", 48) + label(58, 96, "Power BI visuals", 20)
+             + label(24, 122, "public on GitHub", 15)
+             + label(24, 142, "TypeScript · .pbiviz", 13.5, t["muted"], 500))
+
+    defs = (f'<defs><linearGradient id="num" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{t["num0"]}"/>'
+            f'<stop offset="1" stop-color="{t["num1"]}"/></linearGradient>'
+            f'<linearGradient id="barg" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="{t["deep"]}"/>'
+            f'<stop offset="1" stop-color="{t["sky"]}"/></linearGradient></defs>')
+    return svg(960, 380, "Impact at a glance",
+               "4.5+ years in data (BSc in Business Intelligence plus four data roles); 20+ Power BI "
+               "dashboards scaled from four; a 25-table semantic model; 25,000+ SKU-store combinations across 300+ "
+               "stores; reporting prep cut from hours to minutes with Python ETL; BI work across Mexico, France and "
+               "Spain; two open-source Power BI custom visuals shipped.",
+               "\n".join([defs, a, b, c, d, e, f, g]), style)
 
 
 # --------------------------------------------------------------------------- pipeline

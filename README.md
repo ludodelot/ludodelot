@@ -16,7 +16,7 @@
 
 ## About
 
-**Business Intelligence and Data Analyst** who builds end-to-end data products: **Python ETL**, **data modeling** (star schema, DAX, TMDL), governed **KPIs**, **Power BI dashboards** and self-service reporting, plus **generative AI and LLM agents** that document, check and automate the repetitive parts.
+**Business Intelligence and Data Analyst** with **4.5+ years in data** (BSc in Business Intelligence plus BI roles) who builds end-to-end data products: **Python ETL**, **data modeling** (star schema, DAX, TMDL), governed **KPIs**, **Power BI dashboards** and self-service reporting, plus **generative AI and LLM agents** that document, check and automate the repetitive parts.
 
 At **LVMH** (luxury & beauty) I proposed and led the move from Excel reporting to a **20+ dashboard Power BI product** on a **25-table semantic model**, now versioned as **PBIP in Git**. Before that: **CPFR, demand and inventory analytics** at **Groupe SEB**, **RPA and automation ROI** at **El Puerto de Liverpool**, and **research analytics with the OpenAI API** at **EGADE Business School**. **MSc in Finance** (Rennes School of Business) and **BSc in Business Intelligence** (Tec de Monterrey).
 
@@ -37,7 +37,7 @@ At **LVMH** (luxury & beauty) I proposed and led the move from Excel reporting t
 
 ## Selected impact
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/dark/impact.svg"><img src="./assets/light/impact.svg" width="100%" alt="20+ Power BI dashboards scaled from four; 25-table semantic model; 25,000+ SKU-store combinations across 300+ stores; reporting prep from hours to minutes"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/dark/impact.svg"><img src="./assets/light/impact.svg" width="100%" alt="4.5+ years in data (BSc in Business Intelligence plus four data roles); 20+ Power BI dashboards scaled from four; 25-table semantic model; 25,000+ SKU-store combinations across 300+ stores; reporting prep from hours to minutes; BI work in Mexico, France and Spain; two Power BI custom visuals shipped"></picture>
 
 ## Featured work
 
