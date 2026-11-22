@@ -8,15 +8,15 @@
 
 <a href="https://www.linkedin.com/in/delot/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge" alt="Connect on LinkedIn" /></a>
 <a href="mailto:ludovicdelot99@gmail.com"><img src="https://img.shields.io/badge/Email-Write_me-1A7F37?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-<a href="#featured-work"><img src="https://img.shields.io/badge/Projects-See_the_work-0969DA?style=for-the-badge&logo=github&logoColor=white" alt="See featured projects" /></a>
+<a href="#-featured-work"><img src="https://img.shields.io/badge/Projects-See_the_work-0969DA?style=for-the-badge&logo=github&logoColor=white" alt="See featured projects" /></a>
 
-<sub><a href="#about">About</a> · <a href="#selected-impact">Impact</a> · <a href="#featured-work">Projects</a> · <a href="#stack">Stack</a> · <a href="#how-i-work">How I work</a> · <a href="#experience">Experience</a> · <a href="#education">Education</a></sub>
+<sub><a href="#-about">About</a> · <a href="#-selected-impact">Impact</a> · <a href="#-featured-work">Projects</a> · <a href="#-stack">Stack</a> · <a href="#-how-i-work">How I work</a> · <a href="#-experience">Experience</a> · <a href="#-education">Education</a></sub>
 
 </div>
 
-## About
+## <img src="./assets/icons/about.svg" width="28" height="28" alt=""> About
 
-**Business Intelligence and Data Analyst** with **4.5+ years in data** (BSc in Business Intelligence plus BI roles) who builds end-to-end data products: **Python ETL**, **data modeling** (star schema, DAX, TMDL), governed **KPIs**, **Power BI dashboards** and self-service reporting, plus **generative AI and LLM agents** that document, check and automate the repetitive parts.
+**Business Intelligence and Data Analyst** with **4.5+ years in data** (BSc in Business Intelligence plus BI roles), **90+ dashboards** and **115+ automations** developed. I build end-to-end data products: **Python ETL**, **data modeling** (star schema, DAX, TMDL), governed **KPIs**, **Power BI dashboards** and self-service reporting, plus **generative AI and LLM agents** that document, check and automate the repetitive parts.
 
 At **LVMH** (luxury & beauty) I proposed and led the move from Excel reporting to a **20+ dashboard Power BI product** on a **25-table semantic model**, now versioned as **PBIP in Git**. Before that: **CPFR, demand and inventory analytics** at **Groupe SEB**, **RPA and automation ROI** at **El Puerto de Liverpool**, and **research analytics with the OpenAI API** at **EGADE Business School**. **MSc in Finance** (Rennes School of Business) and **BSc in Business Intelligence** (Tec de Monterrey).
 
@@ -35,11 +35,11 @@ At **LVMH** (luxury & beauty) I proposed and led the move from Excel reporting t
 
 </details>
 
-## Selected impact
+## <img src="./assets/icons/impact.svg" width="28" height="28" alt=""> Selected impact
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/dark/impact.svg"><img src="./assets/light/impact.svg" width="100%" alt="4.5+ years in data (BSc in Business Intelligence plus four data roles); 20+ Power BI dashboards scaled from four; 25-table semantic model; 25,000+ SKU-store combinations across 300+ stores; reporting prep from hours to minutes; BI work in Mexico, France and Spain; two Power BI custom visuals shipped"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/dark/impact.svg"><img src="./assets/light/impact.svg" width="100%" alt="4.5+ years in data; 90+ dashboards developed; 115+ automations developed; reporting that reaches 30 countries through worldwide and EMEA models, built from Mexico, France and Spain; 25,000+ SKU-store combinations across 300+ stores; two Power BI custom visuals published"></picture>
 
-## Featured work
+## <img src="./assets/icons/work.svg" width="28" height="28" alt=""> Featured work
 
 <sub>Public repositories. Employer work stays private; these projects use public or synthetic data.</sub>
 
@@ -187,7 +187,7 @@ Turns an Obsidian vault into **persistent memory for AI agents**: Map-of-Content
 
 </details>
 
-## Stack
+## <img src="./assets/icons/stack.svg" width="28" height="28" alt=""> Stack
 
 <div align="center">
 
@@ -221,7 +221,7 @@ Turns an Obsidian vault into **persistent memory for AI agents**: Map-of-Content
 
 </div>
 
-## How I work
+## <img src="./assets/icons/how.svg" width="28" height="28" alt=""> How I work
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/dark/pipeline.svg"><img src="./assets/light/pipeline.svg" width="100%" alt="Pipeline: sources, Python ETL with data-quality checks, a semantic model in DAX and TMDL versioned as PBIP in Git, Power BI with governed KPIs, and an AI layer of agents, skills and MCP"></picture>
 
@@ -229,7 +229,7 @@ Turns an Obsidian vault into **persistent memory for AI agents**: Map-of-Content
 - **Models live in Git** and get reviewed like code.
 - **AI cites its sources** and never invents a number.
 
-## Experience
+## <img src="./assets/icons/experience.svg" width="28" height="28" alt=""> Experience
 
 <table>
 <tr><td valign="top" width="28%">
@@ -287,7 +287,7 @@ Turns an Obsidian vault into **persistent memory for AI agents**: Map-of-Content
 </td></tr>
 </table>
 
-## Education
+## <img src="./assets/icons/education.svg" width="28" height="28" alt=""> Education
 
 **MSc International Management & Finance** · [Rennes School of Business](https://www.linkedin.com/school/renneschoolofbusiness/)<br/>
 <sub>Quantitative finance, econometrics, data science, forecasting, portfolio optimization, risk simulation, AI/fintech.</sub>
@@ -305,22 +305,20 @@ Turns an Obsidian vault into **persistent memory for AI agents**: Map-of-Content
 
 </details>
 
-## GitHub activity
+## <img src="./assets/icons/activity.svg" width="28" height="28" alt=""> GitHub activity
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="./contrib-heatmap.svg"><img src="./contrib-heatmap-light.svg" width="100%" alt="Contribution calendar for the ludodelot GitHub account, with annual total and longest streak"></picture>
 
 <sub>Regenerated daily by a GitHub Action in this repo from the public contribution calendar.</sub>
 
+<br/>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/dark/closing.svg"><img src="./assets/light/closing.svg" width="100%" alt="Let's turn data into decisions. Always happy to talk BI, analytics engineering and AI."></picture>
+
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/dark/footer.svg"><img src="./assets/light/footer.svg" width="100%" alt=""></picture>
-
-<img src="./ludo-ascii.svg" width="46%" alt="Animated ASCII portrait of Ludovic Delot" />
-
-<sub><code>portrait.render(mode="ascii", palette="steel-blue")</code></sub>
-
-**Clean data. Clear models. Decisions that hold up.**
-
-<a href="https://www.linkedin.com/in/delot/"><img src="https://img.shields.io/badge/Let's_talk_data-LinkedIn-0A66C2?style=for-the-badge" alt="Let's talk data on LinkedIn" /></a>
+<a href="https://www.linkedin.com/in/delot/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge" alt="Connect on LinkedIn" /></a>
+<a href="mailto:ludovicdelot99@gmail.com"><img src="https://img.shields.io/badge/Email-Write_me-1A7F37?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="#-featured-work"><img src="https://img.shields.io/badge/Back_to-Projects-0969DA?style=for-the-badge&logo=github&logoColor=white" alt="Back to projects" /></a>
 
 </div>
